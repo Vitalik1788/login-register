@@ -10,4 +10,5 @@ export const PageContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   background-color: #dcebf7;
+ 
 `;

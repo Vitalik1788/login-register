@@ -1,14 +1,20 @@
 import styled from "@emotion/styled";
 import { Field, Form } from "formik";
 
+
 const styledForm = Form;
 const styledField = Field;
 
 
+
 export const LoginContainer = styled.div`
+  position: relative;
   padding: 40px 24px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
   border-radius: 8px;
+  overflow: hidden;
   @media screen and (min-width: 375px) and (max-width: 767px) {
     max-width: 335px;
   }
@@ -16,7 +22,7 @@ export const LoginContainer = styled.div`
   @media screen and (min-width: 768px) {
     max-width: 480px;
     padding: 40px 40px;
-  }
+  }  
 `;
 
 export const FormTitle = styled.h1`
@@ -51,11 +57,17 @@ export const FormLabel = styled.label`
   }
 `;
 
+export const BoxInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+`;
+
 export const FormField = styled(styledField)`
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
@@ -65,11 +77,21 @@ export const FormField = styled(styledField)`
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    margin-bottom: 18px;
   }
 
   ::placeholder {
     color: #dce3e5;
+  }
+`;
+
+export const Error = styled.p`
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
 `;
 
@@ -81,13 +103,15 @@ export const LoginButton = styled.button`
   margin-top: 8px;
   padding: 14px 0;
   border-radius: 16px;
+  font-size: 14px;
   background-color: #3e85f3;
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-top: 30px;
+    font-size: 18px;
   }
 `;
 
@@ -103,5 +127,19 @@ export const SingUp = styled.h3`
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
+  }
+`;
+
+export const Image = styled.img`
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: 150px;
+    left: 1050px;
+    width: 368px;
+    height: 521px;
   }
 `;
