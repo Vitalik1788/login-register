@@ -6,7 +6,7 @@ const styledField = Field;
 
 
 export const RegisterContainer = styled.div`
-  padding: 40px 24px;
+  padding: 24px 24px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
@@ -134,9 +134,7 @@ export const Image = styled.img`
 
   @media screen and (min-width: 1440px) {
     position: absolute;
-    top: 100%;
-    transform: translateY(-100%);
-    left: 50px;
+    bottom: -80px;
     width: 368px;
     height: auto;
   }
