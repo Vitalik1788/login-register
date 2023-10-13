@@ -1,12 +1,24 @@
 import styled from '@emotion/styled';
 import { Field, Form } from 'formik';
 
+
 const styledForm = Form;
 const styledField = Field;
 
 
+export const Test = styled.div`
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+
 export const RegisterContainer = styled.div`
   padding: 24px 24px;
+    
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
@@ -16,6 +28,7 @@ export const RegisterContainer = styled.div`
   }
 
   @media screen and (min-width: 768px) {
+    box-sizing: border-box;
     max-width: 480px;
     padding: 40px 40px;
   }
@@ -134,7 +147,7 @@ export const Image = styled.img`
 
   @media screen and (min-width: 1440px) {
     position: absolute;
-    bottom: -80px;
+    bottom: 0;
     width: 368px;
     height: auto;
   }

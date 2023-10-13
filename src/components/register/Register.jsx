@@ -11,6 +11,7 @@ import {
   RegisterContainer,
   BoxInput,
   Image,
+  Test,
 } from './Register.styled';
 import * as Yup from 'yup';
 
@@ -35,64 +36,66 @@ const Register = () => {
 
   return (
     <>
-      <RegisterContainer>
-        <FormTitle>Sign Up</FormTitle>
-        <Formik
-          initialValues={{ name: '', email: '', password: '' }}
-          validationSchema={userSchema}
-          onSubmit={async values => {
-            console.log(values);
-          }}
-        >
-          {({ values, errors, touched }) => (
-            <FormStyled>
-              <BoxInput>
-                <FormLabel htmlFor="name">Name</FormLabel>
-                <FormField
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder="Enter your name"
-                />
-                {errors.name && touched.name ? (
-                  <Error>{errors.name}</Error>
-                ) : null}
-              </BoxInput>
+      <Test>
+        <RegisterContainer>
+          <FormTitle>Sign Up</FormTitle>
+          <Formik
+            initialValues={{ name: '', email: '', password: '' }}
+            validationSchema={userSchema}
+            onSubmit={async values => {
+              console.log(values);
+            }}
+          >
+            {({ values, errors, touched }) => (
+              <FormStyled>
+                <BoxInput>
+                  <FormLabel htmlFor="name">Name</FormLabel>
+                  <FormField
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+                  {errors.name && touched.name ? (
+                    <Error>{errors.name}</Error>
+                  ) : null}
+                </BoxInput>
 
-              <BoxInput>
-                <FormLabel htmlFor="email">Email</FormLabel>
-                <FormField
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="Enter email"
-                />
-                {errors.email && touched.email ? (
-                  <Error>{errors.email}</Error>
-                ) : null}
-              </BoxInput>
+                <BoxInput>
+                  <FormLabel htmlFor="email">Email</FormLabel>
+                  <FormField
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter email"
+                  />
+                  {errors.email && touched.email ? (
+                    <Error>{errors.email}</Error>
+                  ) : null}
+                </BoxInput>
 
-              <BoxInput>
-                <FormLabel htmlFor="password">Password</FormLabel>
-                <FormField
-                  id="password"
-                  type="password"
-                  name="password"
-                  placeholder="Enter password"
-                />
-                {errors.password && touched.password ? (
-                  <Error>{errors.password}</Error>
-                ) : null}
-              </BoxInput>
-              <RegButton type="submit">
-                Sign Up <FiLogIn size={18} style={{ marginLeft: 11 }} />
-              </RegButton>
-            </FormStyled>
-          )}
-        </Formik>
-      </RegisterContainer>
-      <LogIn>Log In</LogIn>
-      <Image src={IMG} alt='Goose' />
+                <BoxInput>
+                  <FormLabel htmlFor="password">Password</FormLabel>
+                  <FormField
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                  />
+                  {errors.password && touched.password ? (
+                    <Error>{errors.password}</Error>
+                  ) : null}
+                </BoxInput>
+                <RegButton type="submit">
+                  Sign Up <FiLogIn size={18} style={{ marginLeft: 11 }} />
+                </RegButton>
+              </FormStyled>
+            )}
+          </Formik>
+        </RegisterContainer>
+        <LogIn>Log In</LogIn>
+      </Test>
+      <Image src={IMG} alt="Goose" />
     </>
   );
 };
