@@ -24,9 +24,8 @@ import IMG from "../../img/login_goose.jpg";
 const Login = () => {
   let userSchema = Yup.object().shape({
     email: Yup.string()
-      // eslint-disable-next-line no-useless-escape
       .matches(
-        /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+        /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
         'Invalid email. Valid email contain xxx@xxx.xxx'
       )
       .required('Email is required'),

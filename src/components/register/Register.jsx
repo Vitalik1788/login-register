@@ -26,8 +26,7 @@ const Register = () => {
       .max(20, 'Name is too long - should be 20 chars maximum.')
       .required('Name is required'),
     email: Yup.string()
-      // eslint-disable-next-line no-useless-escape
-      .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "Invalid email. Valid email contain xxx@xxx.xxx")
+      .matches(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/, "Invalid email. Valid email contain xxx@xxx.xxx")
       .required('Email is required'),
     password: Yup.string()
       .min(6, 'Password is too short - should be 6 chars minimum.')
