@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/login-register/static/css/main.7f2ac7f8.css",
-    "main.js": "/login-register/static/js/main.340dcc36.js",
-    "static/media/singup_goose.jpg": "/login-register/static/media/singup_goose.c0412b6c893fb389579a.jpg",
+    "main.js": "/login-register/static/js/main.280547b1.js",
+    "static/media/login_goose.jpg": "/login-register/static/media/login_goose.cd2a655a69c600ce4306.jpg",
     "index.html": "/login-register/index.html",
     "main.7f2ac7f8.css.map": "/login-register/static/css/main.7f2ac7f8.css.map",
-    "main.340dcc36.js.map": "/login-register/static/js/main.340dcc36.js.map"
+    "main.280547b1.js.map": "/login-register/static/js/main.280547b1.js.map"
   },
   "entrypoints": [
     "static/css/main.7f2ac7f8.css",
-    "static/js/main.340dcc36.js"
+    "static/js/main.280547b1.js"
   ]
 }
