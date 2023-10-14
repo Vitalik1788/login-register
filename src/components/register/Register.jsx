@@ -11,7 +11,9 @@ import {
   RegisterContainer,
   BoxInput,
   Image,
-  Test,
+  FormPosition,
+  PageContainer,
+  ImagePosition,
 } from './Register.styled';
 import * as Yup from 'yup';
 
@@ -35,8 +37,8 @@ const Register = () => {
   });
 
   return (
-    <>
-      <Test>
+    <PageContainer>
+      <FormPosition>
         <RegisterContainer>
           <FormTitle>Sign Up</FormTitle>
           <Formik
@@ -93,10 +95,12 @@ const Register = () => {
             )}
           </Formik>
         </RegisterContainer>
-        <LogIn>Log In</LogIn>
-      </Test>
-      <Image src={IMG} alt="Goose" />
-    </>
+        <ImagePosition>
+          <LogIn>Log In</LogIn>
+          <Image src={IMG} alt="Goose" />
+        </ImagePosition>
+      </FormPosition>
+    </PageContainer>
   );
 };
 

@@ -1,32 +1,39 @@
 import styled from '@emotion/styled';
 import { Field, Form } from 'formik';
 
-
 const styledForm = Form;
 const styledField = Field;
 
+export const PageContainer = styled.div`
+  position: relative;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dcebf7;
+  overflow: hidden;
+`;
 
-export const Test = styled.div`
-  width: 100%;
-  margin: 0;
-  position: absolute;
+
+export const FormPosition = styled.div`
+  width: 100%;  
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 `;
 
-
 export const RegisterContainer = styled.div`
   padding: 24px 24px;
-    
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
   border-radius: 8px;
-  @media screen and (min-width: 375px) and (max-width: 767px) {
+  @media screen and (min-width: 335px) and (max-width: 767px) {
+    box-sizing: border-box;
     max-width: 335px;
   }
-
   @media screen and (min-width: 768px) {
     box-sizing: border-box;
     max-width: 480px;
@@ -140,6 +147,13 @@ export const LogIn = styled.h3`
   }
 `;
 
+export const ImagePosition = styled.div`
+  position: relative;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
 export const Image = styled.img`
   @media screen and (max-width: 1439px) {
     display: none;
@@ -147,8 +161,10 @@ export const Image = styled.img`
 
   @media screen and (min-width: 1440px) {
     position: absolute;
-    bottom: 0;
+    bottom: -90px;
+    right: 520px;
     width: 368px;
     height: auto;
+    overflow: hidden;
   }
 `;

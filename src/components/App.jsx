@@ -1,12 +1,14 @@
-import { PageContainer } from "./App/App.styled";
-// import Login from "./login/login";
-import Register from "./register/Register";
+// import Register from "./register/Register";
+
+import Login from "./login/login";
+
+
 
 export const App = () => {
   return (
-    <PageContainer>
-      <Register />
-      {/* <Login /> */}
-    </PageContainer>
+    <>
+      {/* <Register /> */}
+      <Login />
+    </>
   );
 };

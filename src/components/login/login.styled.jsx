@@ -6,6 +6,25 @@ const styledForm = Form;
 const styledField = Field;
 
 
+export const PageContainer = styled.div`
+  position: relative;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dcebf7;
+`;
+
+export const FormPosition = styled.div`
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 
 export const LoginContainer = styled.div`
   position: relative;
@@ -15,14 +34,16 @@ export const LoginContainer = styled.div`
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  @media screen and (min-width: 375px) and (max-width: 767px) {
+  @media screen and (min-width: 180px) and (max-width: 767px) {
+    box-sizing: border-box;
     max-width: 335px;
   }
 
   @media screen and (min-width: 768px) {
+    box-sizing: border-box;
     max-width: 480px;
     padding: 40px 40px;
-  }  
+  }
 `;
 
 export const FormTitle = styled.h1`
@@ -115,6 +136,15 @@ export const LoginButton = styled.button`
   }
 `;
 
+export const ImagePosition = styled.div`
+  position: relative;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+`
+
 export const SingUp = styled.h3`
   margin-top: 18px;
   text-align: center;
@@ -137,8 +167,8 @@ export const Image = styled.img`
 
   @media screen and (min-width: 1440px) {
     position: absolute;
-    top: 150px;
-    left: 1050px;
+    bottom: -100px;
+    left: 500px;
     width: 368px;
     height: 521px;
   }
