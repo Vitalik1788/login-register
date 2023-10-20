@@ -1,55 +1,39 @@
 @import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@700&display=swap');
 
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  margin: 0;
-  padding: 0;
-  display: block;
-  border: none;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
+* {
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' , 'Inter',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--color-theme-dark: #13151a;
+	--color-theme-light: #f8f8f8;
+	--color-button-blue: #3e85f3;
+	--color-button-blue-hover: #2b78ef;
+	--color-choice-light-active: #cae8ff;
+	--color-choice-light-no-active: #e3f3ff;
+	--color-choice-dark-active: #3e85f3;
+	--color-choice-dark-no-active: #21222c;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+ul,
+li,
+a,
+p {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
